@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PoultrySystem</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Dual-Column.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Simple-Vertical-Navigation-Menu-v-10.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="d-block">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container"><a class="navbar-brand" href="index.php">Poultry Management System</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Dropdown </a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                        </li>
+                    </ul><span class="navbar-text" id="log_in_panel"><a class="btn btn-primary" role="button" href="signop.php">Get Started!</a></span>
+                    <div class="dropdown" id="username"><a class="dropdown-toggle" aria-expanded="false" data-toggle="dropdown" id="your_name" href="#">Dropdown </a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="dashboard.php">Dashboard</a><a class="dropdown-item" href="logout.php">Log-out</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div class="container profile profile-view" id="profile">
+            <div class="row">
+                <div class="col-md-12 alert-col relative">
+                    <div class="alert alert-info alert-dismissible absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                </div>
+            </div>
+            <form method="post" action="editprof.php">
+                <div class="form-row profile-row">
+                    <div class="col-md-4 relative">
+                        <div class="avatar">
+                            <div class="avatar-bg center"></div>
+                        </div><input class="form-control-file form-control" type="file" name="avatar-file">
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Your Profile</h1>
+                        <hr>
+                        <div class="form-row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group"><label>First Name</label><input class="form-control" type="text" id="fname" name="fname"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group"><label>Last Name</label><input class="form-control" type="text" id="lname" name="lname"></div>
+                            </div>
+                        </div>
+                        <div class="form-group"><label>Address</label><input class="form-control" type="text" id="address" autocomplete="off" required="" name="address"></div>
+                        <div class="form-group"><label>Contact&nbsp; Number</label><input class="form-control" type="text" id="number" autocomplete="off" required="" name="number"></div>
+                        <div class="form-group"><label>Email </label><input class="form-control" type="email" id="email" autocomplete="off" required="" name="email"></div>
+                        <div class="form-row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group"><label>Password </label><input class="form-control" type="password" id="pass" name="pass" autocomplete="off" required=""></div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" id="conpass" name="conpass" autocomplete="off" required=""></div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit">UPDATE</button><a class="btn btn-danger form-btn" role="button" href="delete.php">DELETE</a></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <footer class="footer-clean">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">CBF Management</a></li>
+                            <li><a href="#">Hatchery Management</a></li>
+                            <li><a href="#">Avian Flu Prediction</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Mission and Vision</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Researchers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Modules</h3>
+                        <ul>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Poultry Analysis</a></li>
+                            <li><a href="#">Meications</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Poultry Management System© 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
